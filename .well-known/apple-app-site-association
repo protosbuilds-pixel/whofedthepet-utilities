@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "66QU73KMQN.com.whofedthepet.app",
+        "paths": ["/join", "/join/*"]
+      }
+    ]
+  }
+}
