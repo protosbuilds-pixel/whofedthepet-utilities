@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.whofedthepet.app",
+      "sha256_cert_fingerprints": [
+        00:99:31:11:B1:96:64:A9:C3:FF:4C:64:46:FD:CD:9D:FA:C0:B4:54:24:C1:EF:0B:16:EB:CB:D3:C7:D2:F7:09
+      ]
+    }
+  }
+]
