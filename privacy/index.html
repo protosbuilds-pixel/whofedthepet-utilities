@@ -4,16 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy – WhoFedThePet</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      max-width: 760px;
+      margin: 2rem auto;
+      padding: 0 1.25rem 4rem;
+      line-height: 1.6;
+      color: #1d1d1f;
+      background: #ffffff;
+    }
+    h1 {
+      margin-top: 2.5rem;
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    h2 {
+      margin-top: 2.25rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    p {
+      margin: 0.7rem 0;
+    }
+    ul {
+      padding-left: 1.4rem;
+      margin: 0.7rem 0;
+    }
+    li {
+      margin-bottom: 0.3rem;
+    }
+    a {
+      color: #0071e3;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    hr {
+      margin: 3.5rem 0;
+      border: none;
+      border-top: 1px solid #d2d2d7;
+    }
+    strong {
+      font-weight: 600;
+    }
+    .meta {
+      color: #6e6e73;
+      font-size: 0.95rem;
+      margin-top: 0;
+    }
+  </style>
 </head>
 <body>
 
   <h1>Privacy Policy</h1>
-  <p>Last updated: March 26, 2026</p>
+  <p class="meta">Last updated: May 1, 2026</p>
 
   <h2>1. Controller</h2>
   <p>
     This app is operated by:<br>
     Andreas Meid<br>
+    Hochstrasse 13<br>
+    13357 Berlin<br>
+    Germany<br>
     Email: protosbuilds@gmail.com
   </p>
 
@@ -24,9 +79,10 @@
     <li>Pet name and related pet information</li>
     <li>Feeding records (time, quantity, food type)</li>
     <li>Medication records (time, type, dosage)</li>
-    <li>Reminder and notification settings</li>
+    <li>Reminder and notification settings (stored locally on the device)</li>
+    <li>Household sharing information (members invited to a shared household)</li>
+    <li>Subscription status (if applicable)</li>
     <li>Technical device information (device type, OS version)</li>
-    <li>Push notification token</li>
     <li>Error and crash reports</li>
   </ul>
 
@@ -34,50 +90,138 @@
   <ul>
     <li>User account creation and authentication</li>
     <li>Managing pets, feeding records, and medication tracking</li>
-    <li>Sending push notifications and reminders</li>
+    <li>Sharing pet care data within a household, where users have actively invited members</li>
+    <li>Scheduling local reminders</li>
+    <li>Providing and managing subscription features</li>
     <li>Improving technical stability and performance</li>
   </ul>
 
   <h2>4. Third-Party Services</h2>
   <p>
-    We use Sentry for error tracking and crash reporting.
-    Sentry may process technical data such as device information and error logs
-    to improve application stability.
+    <strong>Backend &amp; Data Storage:</strong>
+    Supabase (Supabase Inc.; data processed in Dublin, Ireland / EU data center).
+    Stores account data, pet data, feeding and medication records,
+    household sharing information, and reminder settings.
+    A Data Processing Agreement under Art. 28 GDPR is in place.
   </p>
   <p>
-    Push notifications are delivered via Apple Push Notification Service (APNs).
+    <strong>Email Delivery (account confirmation, password reset):</strong>
+    Resend (Resend, Inc., USA), integrated as a custom SMTP provider through Supabase Auth.
+    Transmitted data: email address, name, content of system emails.
+    Data transfer to the United States is based on the EU-US Data Privacy Framework
+    (adequacy decision) and additionally the EU Standard Contractual Clauses (Art. 46 GDPR).
+  </p>
+  <p>
+    <strong>Reminders / Notifications:</strong>
+    Reminders are scheduled locally on the user's device only (Expo Local Notifications).
+    No data is transmitted to any push notification server,
+    and no push notification tokens are collected or stored.
+  </p>
+  <p>
+    <strong>Payment Processing:</strong>
+    Apple Inc. (App Store / In-App Purchase) for iOS devices, and
+    Google Ireland Ltd. (Google Play Billing) for Android devices.
+    Both providers act as independent controllers for payment processing;
+    their respective privacy policies apply in addition to this Policy.
+  </p>
+  <p>
+    <strong>Error Tracking:</strong>
+    Sentry (Functional Software, Inc.; data processed in Frankfurt, Germany / EU data center).
+    Processes technical device information and error reports to improve application stability.
   </p>
 
   <h2>5. Data Storage and Retention</h2>
+  <ul>
+    <li>Account-related data: retained until the user account is deleted.</li>
+    <li>Crash and error reports (Sentry): retained for up to 90 days.</li>
+    <li>Subscription and transaction records: retained as required by applicable tax and accounting law (in Germany: up to 10 years pursuant to § 147 AO).</li>
+    <li>Reminder settings: stored locally on the device; removed when the app is uninstalled.</li>
+  </ul>
   <p>
-    Personal data is stored as long as the user account exists.
     Users may request deletion of their account and associated data at any time
     by contacting protosbuilds@gmail.com.
   </p>
 
   <h2>6. User Rights</h2>
   <p>
-    Users have the right to request access, correction, or deletion of their personal data.
+    Users have the right to request access, correction, deletion, restriction of processing,
+    data portability, and to object to processing of their personal data.
     Requests can be sent to protosbuilds@gmail.com.
-    Users also have the right to lodge a complaint with a data protection authority.
-    Processing is based on Art. 6(1)(b) GDPR (performance of a contract) and Art. 6(1)(f) GDPR (legitimate interests).
+    Processing is based on Art. 6(1)(b) GDPR (performance of a contract) and
+    Art. 6(1)(f) GDPR (legitimate interests in technical stability and security).
+    Users have the right to lodge a complaint with a data protection authority.
+    The competent supervisory authority for the controller is the
+    Berlin Commissioner for Data Protection and Freedom of Information
+    (Berliner Beauftragte für Datenschutz und Informationsfreiheit),
+    Alt-Moabit 59-61, 10555 Berlin, Germany,
+    <a href="https://www.datenschutz-berlin.de">https://www.datenschutz-berlin.de</a>.
   </p>
 
-  <h2>7. Data Security</h2>
+  <h2>7. Applicability Outside the EU/EEA</h2>
+  <p>
+    <strong>United Kingdom:</strong>
+    For users habitually resident in the United Kingdom, the provisions of the
+    UK GDPR and the Data Protection Act 2018 apply in addition.
+    The rights described above apply accordingly.
+    Complaints may be submitted to the UK Information Commissioner's Office (ICO):
+    <a href="https://ico.org.uk">https://ico.org.uk</a>.
+  </p>
+  <p>
+    <strong>Switzerland:</strong>
+    For users habitually resident in Switzerland, the provisions of the revised
+    Swiss Federal Act on Data Protection (revFADP) apply in addition.
+    The competent supervisory authority is the Federal Data Protection and
+    Information Commissioner (FDPIC):
+    <a href="https://www.edoeb.admin.ch">https://www.edoeb.admin.ch</a>.
+  </p>
+  <p>
+    <strong>United States &ndash; State Privacy Rights:</strong>
+    Residents of certain U.S. states (including California, Virginia, Colorado,
+    Connecticut, Texas, Utah, and others) may have additional rights regarding
+    their personal data, including the right to know, delete, correct, and opt out
+    of the sale or sharing of personal information, as well as to opt out of
+    targeted advertising and profiling.
+    We do not sell personal information as defined under the California Consumer
+    Privacy Act (CCPA/CPRA), and we do not engage in targeted advertising.
+    To exercise your rights, contact us at protosbuilds@gmail.com.
+  </p>
+  <p>
+    <strong>Children Under 13 (COPPA):</strong>
+    This app is not directed to children under 13, and we do not knowingly collect
+    personal information from children under 13 in compliance with the Children's
+    Online Privacy Protection Act (COPPA). If you believe a child under 13 has
+    provided us with personal information, please contact protosbuilds@gmail.com
+    so we can delete the data.
+  </p>
+
+  <h2>8. Data Security</h2>
   <p>
     Appropriate technical and organizational measures are implemented
-    to protect personal data against unauthorized access or misuse.
+    to protect personal data against unauthorized access, alteration, disclosure,
+    or destruction. This includes encryption in transit (TLS) and at rest,
+    access controls, and regular review of security practices.
+  </p>
+
+  <h2>9. Contact and Changes to this Policy</h2>
+  <p>
+    For questions regarding this Privacy Policy or to exercise your rights,
+    contact: protosbuilds@gmail.com.
+    This Privacy Policy may be updated to reflect changes in the app, our services,
+    or applicable law. The "Last updated" date at the top reflects the most recent revision.
   </p>
 
   <hr>
 
   <h1>Datenschutzerklärung</h1>
-  <p>Stand: 26. März 2026</p>
+  <p class="meta">Stand: 1. Mai 2026</p>
 
   <h2>1. Verantwortlicher</h2>
   <p>
     Verantwortlich für diese App:<br>
     Andreas Meid<br>
+    Hochstrasse 13<br>
+    13357 Berlin<br>
+    Deutschland<br>
     E-Mail: protosbuilds@gmail.com
   </p>
 
@@ -88,9 +232,10 @@
     <li>Name und Informationen zum Haustier</li>
     <li>Fütterungsdaten (Zeitpunkt, Menge, Art des Futters)</li>
     <li>Medikationsdaten (Zeitpunkt, Art, Dosierung)</li>
-    <li>Erinnerungs- und Benachrichtigungseinstellungen</li>
+    <li>Erinnerungs- und Benachrichtigungseinstellungen (lokal auf dem Gerät gespeichert)</li>
+    <li>Informationen zu geteilten Haushalten (Mitglieder, die zu einem gemeinsamen Haushalt eingeladen wurden)</li>
+    <li>Abonnementstatus (sofern zutreffend)</li>
     <li>Technische Gerätedaten (Gerätetyp, Betriebssystemversion)</li>
-    <li>Push-Token</li>
     <li>Fehler- und Absturzberichte</li>
   </ul>
 
@@ -98,37 +243,127 @@
   <ul>
     <li>Erstellung und Verwaltung von Benutzerkonten</li>
     <li>Verwaltung von Haustieren, Fütterungs- und Medikationsdaten</li>
-    <li>Versand von Push-Benachrichtigungen und Erinnerungen</li>
+    <li>Teilen von Pflegedaten innerhalb eines Haushalts, sofern Nutzer aktiv Mitglieder eingeladen haben</li>
+    <li>Planung lokaler Erinnerungen</li>
+    <li>Bereitstellung und Verwaltung von Abonnementfunktionen</li>
     <li>Technische Fehleranalyse und Stabilitätsverbesserung</li>
   </ul>
 
   <h2>4. Drittanbieter</h2>
   <p>
-    Zur Fehleranalyse wird Sentry verwendet.
-    Dabei können technische Gerätedaten und Fehlermeldungen verarbeitet werden.
+    <strong>Backend &amp; Datenspeicherung:</strong>
+    Supabase (Supabase Inc.; Datenverarbeitung im Rechenzentrum Dublin, Irland / EU).
+    Speichert Account-Daten, Pet-Daten, Fütterungs- und Medikationsverläufe,
+    Informationen zu geteilten Haushalten sowie Erinnerungseinstellungen.
+    Ein Auftragsverarbeitungsvertrag gemäß Art. 28 DSGVO besteht.
   </p>
   <p>
-    Push-Benachrichtigungen erfolgen über den Apple Push Notification Service (APNs).
+    <strong>E-Mail-Versand (Account-Bestätigung, Passwort-Reset):</strong>
+    Resend (Resend, Inc., USA), eingebunden als Custom-SMTP-Anbieter über Supabase Auth.
+    Übermittelte Daten: E-Mail-Adresse, Name, Inhalt der System-E-Mails.
+    Die Datenübermittlung in die USA erfolgt auf Grundlage des EU-US Data Privacy
+    Frameworks (Adequacy Decision) sowie ergänzend der EU-Standardvertragsklauseln (Art. 46 DSGVO).
+  </p>
+  <p>
+    <strong>Erinnerungen / Benachrichtigungen:</strong>
+    Erinnerungen werden ausschließlich lokal auf dem Gerät geplant
+    (Expo Local Notifications). Es findet kein Datenversand an einen Push-Server statt;
+    es werden keine Push-Tokens erfasst oder gespeichert.
+  </p>
+  <p>
+    <strong>Zahlungsabwicklung:</strong>
+    Apple Inc. (App Store / In-App Purchase) für iOS-Geräte sowie
+    Google Ireland Ltd. (Google Play Billing) für Android-Geräte.
+    Beide Anbieter agieren als eigenständig Verantwortliche für die Zahlungsabwicklung;
+    deren Datenschutzerklärungen gelten zusätzlich zu dieser Erklärung.
+  </p>
+  <p>
+    <strong>Fehleranalyse:</strong>
+    Sentry (Functional Software, Inc.; Datenverarbeitung im Rechenzentrum Frankfurt,
+    Deutschland / EU). Verarbeitet technische Gerätedaten und Fehlermeldungen
+    zur Stabilitätsverbesserung.
   </p>
 
   <h2>5. Speicherdauer</h2>
+  <ul>
+    <li>Account-bezogene Daten: bis zur Löschung des Benutzerkontos.</li>
+    <li>Crash- und Fehlerberichte (Sentry): bis zu 90 Tage.</li>
+    <li>Abonnement- und Transaktionsdaten: gemäß steuer- und handelsrechtlichen Aufbewahrungspflichten (in Deutschland bis zu 10 Jahre gemäß § 147 AO).</li>
+    <li>Erinnerungseinstellungen: lokal auf dem Gerät gespeichert; werden bei Deinstallation der App entfernt.</li>
+  </ul>
   <p>
-    Personenbezogene Daten werden gespeichert, solange ein Benutzerkonto besteht.
-    Eine Löschung kann jederzeit per E-Mail an protosbuilds@gmail.com beantragt werden.
+    Eine Löschung des Benutzerkontos und der zugehörigen Daten kann jederzeit
+    per E-Mail an protosbuilds@gmail.com beantragt werden.
   </p>
 
   <h2>6. Rechte der Nutzer</h2>
   <p>
-    Nutzer haben das Recht auf Auskunft, Berichtigung oder Löschung ihrer personenbezogenen Daten.
-    Anfragen können an protosbuilds@gmail.com gerichtet werden.
+    Nutzer haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung
+    der Verarbeitung, Datenübertragbarkeit sowie Widerspruch gegen die Verarbeitung
+    ihrer personenbezogenen Daten. Anfragen können an protosbuilds@gmail.com gerichtet werden.
+    Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO
+    (Vertragserfüllung) sowie Art. 6 Abs. 1 lit. f DSGVO
+    (berechtigtes Interesse an technischer Stabilität und Sicherheit).
     Nutzer haben zudem das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren.
-    Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) sowie Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse).
+    Die für den Verantwortlichen zuständige Aufsichtsbehörde ist die
+    Berliner Beauftragte für Datenschutz und Informationsfreiheit (BlnBDI),
+    Alt-Moabit 59-61, 10555 Berlin,
+    <a href="https://www.datenschutz-berlin.de">https://www.datenschutz-berlin.de</a>.
   </p>
 
-  <h2>7. Datensicherheit</h2>
+  <h2>7. Geltung außerhalb der EU/des EWR</h2>
+  <p>
+    <strong>Vereinigtes Königreich:</strong>
+    Für Nutzer mit gewöhnlichem Aufenthalt im Vereinigten Königreich gelten
+    zusätzlich die Bestimmungen des UK GDPR und des Data Protection Act 2018.
+    Die oben beschriebenen Rechte gelten entsprechend.
+    Beschwerden können beim Information Commissioner's Office (ICO) eingereicht werden:
+    <a href="https://ico.org.uk">https://ico.org.uk</a>.
+  </p>
+  <p>
+    <strong>Schweiz:</strong>
+    Für Nutzer mit gewöhnlichem Aufenthalt in der Schweiz gelten zusätzlich
+    die Bestimmungen des revidierten Schweizer Datenschutzgesetzes (revDSG).
+    Die zuständige Aufsichtsbehörde ist der Eidgenössische Datenschutz- und
+    Öffentlichkeitsbeauftragte (EDÖB):
+    <a href="https://www.edoeb.admin.ch">https://www.edoeb.admin.ch</a>.
+  </p>
+  <p>
+    <strong>USA &ndash; Rechte einzelner Bundesstaaten:</strong>
+    Einwohner bestimmter US-Bundesstaaten (u. a. Kalifornien, Virginia, Colorado,
+    Connecticut, Texas, Utah und weitere) verfügen unter Umständen über zusätzliche
+    Rechte bezüglich ihrer personenbezogenen Daten, einschließlich des Rechts auf
+    Auskunft, Löschung, Berichtigung sowie auf Widerspruch gegen den Verkauf oder
+    das Teilen personenbezogener Daten und gegen zielgerichtete Werbung und Profiling.
+    Wir verkaufen keine personenbezogenen Daten im Sinne des California Consumer
+    Privacy Act (CCPA/CPRA) und betreiben keine zielgerichtete Werbung.
+    Zur Ausübung Ihrer Rechte wenden Sie sich an protosbuilds@gmail.com.
+  </p>
+  <p>
+    <strong>Kinder unter 13 Jahren (COPPA):</strong>
+    Diese App richtet sich nicht an Kinder unter 13 Jahren. In Übereinstimmung
+    mit dem Children's Online Privacy Protection Act (COPPA) erheben wir wissentlich
+    keine personenbezogenen Daten von Kindern unter 13 Jahren. Sollten Sie Anhaltspunkte
+    dafür haben, dass uns ein Kind unter 13 Jahren personenbezogene Daten übermittelt hat,
+    kontaktieren Sie bitte protosbuilds@gmail.com, damit wir die Daten löschen können.
+  </p>
+
+  <h2>8. Datensicherheit</h2>
   <p>
     Es werden geeignete technische und organisatorische Maßnahmen getroffen,
-    um personenbezogene Daten vor unbefugtem Zugriff oder Missbrauch zu schützen.
+    um personenbezogene Daten vor unbefugtem Zugriff, Veränderung, Offenlegung
+    oder Zerstörung zu schützen. Dies umfasst Verschlüsselung bei der Übertragung (TLS)
+    und im Ruhezustand, Zugriffskontrollen sowie regelmäßige Überprüfung
+    der Sicherheitspraxis.
+  </p>
+
+  <h2>9. Kontakt und Änderungen dieser Datenschutzerklärung</h2>
+  <p>
+    Bei Fragen zu dieser Datenschutzerklärung oder zur Ausübung Ihrer Rechte
+    wenden Sie sich an: protosbuilds@gmail.com.
+    Diese Datenschutzerklärung kann aktualisiert werden, um Änderungen an der App,
+    unseren Diensten oder geltendem Recht widerzuspiegeln.
+    Das oben angegebene Datum &bdquo;Stand&ldquo; zeigt die jeweils letzte Überarbeitung an.
   </p>
 
 </body>
